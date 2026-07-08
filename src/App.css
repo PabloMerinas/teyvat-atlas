@@ -1143,6 +1143,190 @@
 .legend-line.kind-conflicto { border-color: rgba(224, 90, 104, 0.8); border-top-style: dashed; }
 .legend-line.kind-misterio { border-color: rgba(169, 126, 242, 0.85); border-top-style: dotted; }
 
+/* ── Guía por actos ──────────────────────────────────────────── */
+
+.acts-guide {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(5, 7, 11, 0.78);
+  backdrop-filter: blur(10px);
+  animation: intro-in 0.3s ease;
+}
+
+.acts-guide-panel {
+  display: flex;
+  flex-direction: column;
+  width: min(940px, 100%);
+  height: min(680px, 100%);
+  background: linear-gradient(175deg, rgba(13, 16, 24, 0.96), rgba(9, 11, 17, 0.97));
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.acts-guide-head {
+  position: relative;
+  flex-shrink: 0;
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.acts-guide-kicker {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.acts-guide-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.acts-guide-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.acts-guide-nav {
+  flex-shrink: 0;
+  width: 250px;
+  padding: 14px;
+  overflow-y: auto;
+  border-right: 1px solid var(--line);
+  scrollbar-width: thin;
+}
+
+.acts-guide-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 10px 11px;
+  margin-bottom: 3px;
+  text-align: left;
+  border-radius: 11px;
+  color: var(--ink-dim);
+  transition: all 0.16s;
+}
+
+.acts-guide-nav-item:hover { background: rgba(255, 255, 255, 0.04); color: var(--ink); }
+
+.acts-guide-nav-item.active {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--c) 12%, transparent);
+  box-shadow: inset 2px 0 0 var(--c);
+}
+
+.acts-guide-nav-glyph {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--c);
+  border: 1px solid color-mix(in srgb, var(--c) 40%, transparent);
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--c) 10%, transparent);
+}
+
+.acts-guide-nav-title {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.acts-guide-nav-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.acts-guide-content {
+  flex: 1;
+  min-width: 0;
+  padding: 24px 28px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(216, 179, 106, 0.25) transparent;
+}
+
+.acts-guide-content-head { margin-bottom: 20px; }
+
+.acts-guide-content-kicker {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c);
+}
+
+.acts-guide-content-title {
+  margin-bottom: 6px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.acts-guide-content-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: color-mix(in srgb, var(--c) 55%, var(--ink));
+}
+
+.acts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.act-card {
+  padding: 15px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 2px solid var(--c);
+  border-radius: 0 12px 12px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.act-card-title {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.act-card-body {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #c9c5ba;
+}
+
+@media (max-width: 720px) {
+  .acts-guide-body { flex-direction: column; }
+  .acts-guide-nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
 /* ── Portada ─────────────────────────────────────────────────── */
 
 .intro {
