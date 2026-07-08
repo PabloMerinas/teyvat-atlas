@@ -52,7 +52,8 @@ export default function DetailPanel({ nodeId, onSelect, onClose, spoilerLimit })
             </div>
             <div>
               <span className="panel-kicker">
-                {TYPES[node.type].label} · {ERAS[node.era].short} · {ERAS[node.era].year}
+                {TYPES[node.type].label} · {ERAS[node.era].short}
+                {ERAS[node.era].year !== ERAS[node.era].short && ` · ${ERAS[node.era].year}`}
               </span>
               <h2 className="panel-title">{node.title}</h2>
             </div>
