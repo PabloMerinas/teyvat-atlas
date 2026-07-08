@@ -7,6 +7,7 @@ import DetailPanel from './components/DetailPanel.jsx';
 import RouteGuide from './components/RouteGuide.jsx';
 import Legend from './components/Legend.jsx';
 import Intro from './components/Intro.jsx';
+import ActsGuide from './components/ActsGuide.jsx';
 import { NODE_MAP } from './data/lore.js';
 import './App.css';
 
@@ -17,6 +18,7 @@ function Atlas() {
   const [stepIndex, setStepIndex] = useState(0);
   const [spoilerLimit, setSpoilerLimit] = useState('todo');
   const [introState, setIntroState] = useState('open'); // open | closing | closed
+  const [showActs, setShowActs] = useState(false);
 
   const { setCenter } = useReactFlow();
 
@@ -70,7 +72,8 @@ function Atlas() {
     function onKey(e) {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
       if (e.key === 'Escape') {
-        if (activeRoute) pickRoute(null);
+        if (showActs) setShowActs(false);
+        else if (activeRoute) pickRoute(null);
         else setSelectedId(null);
       }
       if (activeRoute) {
@@ -80,7 +83,7 @@ function Atlas() {
     }
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [activeRoute, stepIndex, goToStep, pickRoute]);
+  }, [activeRoute, stepIndex, goToStep, pickRoute, showActs]);
 
   return (
     <div className={`atlas-app${selectedId ? ' has-panel' : ''}${activeRoute ? ' has-route' : ''}`}>
@@ -102,6 +105,7 @@ function Atlas() {
         onPickRoute={pickRoute}
         spoilerLimit={spoilerLimit}
         setSpoilerLimit={setSpoilerLimit}
+        onOpenActs={() => setShowActs(true)}
       />
 
       <DetailPanel
@@ -118,6 +122,8 @@ function Atlas() {
       {introState !== 'closed' && (
         <Intro onExplore={dismissIntro} onPickRoute={startRouteFromIntro} closing={introState === 'closing'} />
       )}
+
+      {showActs && <ActsGuide onClose={() => setShowActs(false)} spoilerLimit={spoilerLimit} />}
     </div>
   );
 }

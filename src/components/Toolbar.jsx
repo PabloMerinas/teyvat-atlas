@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState, useEffect } from 'react';
-import { Search, SlidersHorizontal, Route, EyeOff, X } from 'lucide-react';
+import { Search, SlidersHorizontal, Route, EyeOff, X, BookOpen } from 'lucide-react';
 import clsx from 'clsx';
 import { LoreIcon } from './icons.jsx';
 import {
@@ -26,6 +26,7 @@ export default function Toolbar({
   onPickRoute,
   spoilerLimit,
   setSpoilerLimit,
+  onOpenActs,
 }) {
   const [query, setQuery] = useState('');
   const [openMenu, setOpenMenu] = useState(null); // 'filters' | 'routes' | null
@@ -112,6 +113,10 @@ export default function Toolbar({
         </div>
 
         <div className="toolbar-actions">
+          <button className="tool-btn" onClick={onOpenActs}>
+            <BookOpen size={15} />
+            <span className="btn-label">Actos</span>
+          </button>
           <button
             className={clsx('tool-btn', { active: openMenu === 'routes' || activeRoute })}
             onClick={() => setOpenMenu(openMenu === 'routes' ? null : 'routes')}
