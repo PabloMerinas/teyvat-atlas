@@ -48,6 +48,7 @@ export default function Legend() {
                 <li key={k}>
                   <span className="legend-dot" style={{ '--c': v.color }} />
                   {v.label}
+                  <span className="legend-year">{v.year}</span>
                 </li>
               ))}
             </ul>

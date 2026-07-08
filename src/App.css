@@ -1100,6 +1100,13 @@
   gap: 9px;
 }
 
+.legend-year {
+  margin-left: auto;
+  font-size: 10px;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
 .legend-note {
   margin-top: 8px;
   max-width: 170px;
