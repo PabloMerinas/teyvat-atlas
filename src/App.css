@@ -37,6 +37,11 @@
   z-index: 5;
 }
 
+.graph-wrap {
+  position: absolute;
+  inset: 0;
+}
+
 .react-flow {
   background: transparent;
 }
