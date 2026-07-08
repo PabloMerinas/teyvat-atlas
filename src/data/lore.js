@@ -1605,6 +1605,198 @@ export const ROUTES = [
   },
 ];
 
+// Guía por actos: la Cuesta del Arconte (Archon Quest) desglosada capítulo
+// a capítulo. Resume la trama que ya has jugado, no la que aún falta.
+export const ACTS = [
+  {
+    id: 'prologo',
+    title: 'Prólogo',
+    subtitle: 'Mondstadt · Liyue',
+    tagline: 'Despiertas en un mundo que no es el tuyo, sin poderes y sin tu gemelo/a.',
+    region: 'mondstadt',
+    icon: 'Wind',
+    spoiler: 'ninguno',
+    acts: [
+      {
+        title: 'Acto I · El forastero que atrapó al viento',
+        body: 'Tú y tu gemelo/a caéis a Teyvat desde fuera del mundo. Un dios os separa al instante: tu hermano/a queda sellado y tú despiertas 500 años después, sin memoria reciente ni poder. Con Paimon como única compañía, llegas a Mondstadt, te ganas tu primera Visión y conoces a la Guardia de Caballeros.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto II · Por un mañana sin lágrimas',
+        body: 'Un viaje a Liyue te enfrenta por primera vez a los Fatui, que ya operan con total libertad en el puerto. Un Harbinger encantador y peligroso —el Onceavo, Childe— interfiere en tus asuntos y deja claro que su organización busca algo concreto en la nación de Rex Lapis.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto III · Canción del dragón y la libertad',
+        body: 'De vuelta en Mondstadt, un dragón corrompido por el Abismo, Dvalin, ataca la ciudad. Rastreas la corrupción hasta las ruinas de Decarabian y llegas a la cumbre justo cuando los Fatui intentan aprovechar el caos. Ahí, Venti —el bardo que conocías desde el principio— revela ser Barbatos, el Arconte Anemo.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'liyue',
+    title: 'Capítulo I · Liyue',
+    subtitle: 'Adiós, Señor Arcaico',
+    tagline: 'Un dios finge su propia muerte para poner a prueba a la nación que gobierna.',
+    region: 'liyue',
+    icon: 'Landmark',
+    spoiler: 'mondstadt',
+    acts: [
+      {
+        title: 'El contrato roto',
+        body: 'Zhongli, un consultor funerario que parece saberlo todo sobre Liyue, finge su propia muerte para forzar una negociación con los Tianquan (Ningguang) y renegociar los términos bajo los que protege la nación. Sin Arconte visible, Liyue queda expuesta justo cuando más lo necesita.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Osial despierta',
+        body: 'Los Fatui, con Childe al frente, aprovechan el vacío de poder para despertar a Osial, el antiguo Señor de los Vórtices sellado bajo el puerto hace siglos. Es una jugada de fuerza: demostrar que Liyue puede ser doblegada incluso con su Arconte "muerto".',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Rex Lapis revelado',
+        body: 'En la batalla final, Zhongli revela ser Rex Lapis en carne y hueso —algo que media ciudad sospechaba pero nadie confirmaba—, derrota a Osial y a Childe, y firma su último contrato: entrega su Gnosis y su estatus divino a cambio de vivir como un ciudadano más. Liyue entra en una era sin Arconte activo.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'inazuma',
+    title: 'Capítulo II · Inazuma',
+    subtitle: 'El Dios Inamovible y la Eutimia Eterna',
+    tagline: 'Una diosa congela su país por miedo al cambio; tú acabas descongelándolo.',
+    region: 'inazuma',
+    icon: 'CloudLightning',
+    spoiler: 'liyue',
+    acts: [
+      {
+        title: 'Acto I · Bajo un cielo extranjero',
+        body: 'Llegas a una Inazuma gobernada por el Decreto de Cacería de Visiones de la Raiden Shogun (Ei), que persigue la "eternidad" prohibiendo cualquier cambio. Conoces a Sangonomiya Kokomi y a la resistencia de Watatsumi, enfrentada tanto al gobierno imperial como a los Fatui, que arman a ambos bandos por igual.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto II · Enkanomiya',
+        body: 'Un rastro te lleva bajo el mar, hasta Enkanomiya: una civilización atrapada en un ciclo artificial de día y noche desde antes de la Guerra de Arcontes, gobernada antaño por la serpiente Orobashi. Ayudas a sus últimos habitantes a romper el bucle y a mirar hacia un futuro que llevaban milenios sin tener.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto III · Omnipresencia sobre los mortales',
+        body: 'De vuelta en la superficie, te infiltras en el Plano de la Eutimia para llegar hasta Ei, esquivando a la Guardia Tenryou de Kujou Sara. Queda claro hasta dónde llega el decreto: cualquiera que rompa la "eternidad" impuesta, sin importar su rango, es cazado sin piedad.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto IV · Inversión de la génesis',
+        body: 'Te enfrentas a la propia Raiden Shogun y descubres la verdad: es un autómata creado por la Raiden original, Makoto, que murió durante el Cataclismo hace 500 años para preservar su voluntad de gobernar. Al vencerla en un duelo simbólico, Ei elige abandonar la eternidad congelada, reabre el país y entrega su Gnosis.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'sumeru',
+    title: 'Capítulo III · Sumeru',
+    subtitle: 'El Akasha late, la llama del Kalpa se alza',
+    tagline: 'Liberas a una Arconte niña y descubres que la memoria del mundo se puede editar.',
+    region: 'sumeru',
+    icon: 'TreePine',
+    spoiler: 'inazuma',
+    acts: [
+      {
+        title: 'Acto I · Sueños vacíos',
+        body: 'En el desierto de Sumeru, junto al erudito Cyno y más tarde Alhaitham y Kaveh, investigas ruinas enterradas bajo la arena que pertenecieron a una civilización anterior a los Arcontes: los restos del reinado del rey Deshret.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto II · A través de la niebla de tiempos pasados',
+        body: 'La investigación destapa ilusiones y recuerdos falsos sembrados a propósito. Alguien está manipulando Irminsul, el árbol que guarda la memoria de todo Teyvat, borrando y reescribiendo hechos como quien edita un archivo.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto III · Caribert',
+        body: 'El rastro conduce hasta la Akademiya, la institución que gobierna el conocimiento en la selva, donde descubres que Nahida —la Arconte Dendro— lleva siglos encerrada "por su propia seguridad". El responsable de manipular Irminsul resulta ser un Fatui Harbinger, el Cantautor, más conocido como Scaramouche.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Acto IV · La Arconte liberada',
+        body: 'Rescatas a Nahida y sale a la luz que Scaramouche es en realidad una marioneta creada por ella siglos atrás, luego robada y corrompida por los Fatui en su búsqueda de un cuerpo real. Libre por fin, Nahida se convierte en una Arconte activa y te da acceso a fragmentos verdaderos de la memoria del mundo.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'fontaine',
+    title: 'Capítulo IV · Fontaine',
+    subtitle: 'El juicio de la nación del agua',
+    tagline: 'Una profecía se cumple, y una diosa se ejecuta a sí misma para burlar al cielo.',
+    region: 'fontaine',
+    icon: 'Scale',
+    spoiler: 'sumeru',
+    acts: [
+      {
+        title: 'Llegada a un estado-tribunal',
+        body: 'Fontaine resuelve casi todo en juicios públicos presididos por su Archonte, Furina: una diva teatral que dicta sentencias con desdén y guardaespaldas de agua llamados Melusinas. Todo en la nación parece pensado para el espectáculo, incluida la justicia.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'La Fortaleza de Meropide',
+        body: 'La investigación te lleva bajo el agua, a la prisión-fábrica de Meropide, dirigida por el Duque Wriothesley. Mientras tanto, el nivel del agua de Fontaine empieza a subir sin ninguna explicación oficial.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'La profecía del Juicio Final',
+        body: 'Se revela una profecía centenaria: Fontaine será juzgada por sus pecados y hundida. Furina, que lleva 500 años cargando el papel de Arconte sin ser realmente su portadora original, se prepara para un final que cree inevitable.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'El Mar de las Eras Pasadas',
+        body: 'En el fondo del océano, Neuvillette —el fiscal que te ha acompañado todo el capítulo— revela ser el Soberano Hydro renacido. Furina, que comparte cuerpo desde niña con la entidad Focalors, orquesta su propia "muerte" pública para cumplir la profecía sin que el pueblo sufra la inundación real. Al final, Focalors y Furina se separan: Furina sobrevive, mortal y libre por primera vez.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'natlan',
+    title: 'Capítulo V · Natlan',
+    subtitle: 'La nación de la guerra y el fuego',
+    tagline: 'Guerra total contra el Abismo. Mueres. Vuelves.',
+    region: 'natlan',
+    icon: 'Flame',
+    spoiler: 'fontaine',
+    acts: [
+      {
+        title: 'Las tribus del fuego',
+        body: 'Natlan está organizada en clanes guerreros, no en una única capital: cada tribu vive de su propia relación con el fuego, la sangre y la victoria. Llegas en plena preparación para un conflicto que lleva gestándose mucho tiempo.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'La guerra se vuelve abierta',
+        body: 'Por primera vez en el juego, la Orden del Abismo no actúa en la sombra: ataca Natlan como un ejército declarado. La nación entera se moviliza, y tú acabas en el centro del combate, junto a Mavuika, la Arconte Pyro que lidera desde el frente.',
+        canon: 'confirmado',
+      },
+      {
+        title: 'Mueres. Vuelves.',
+        body: 'En el clímax del capítulo, el propio Viajero muere y regresa: una experiencia que lo cambia todo sobre lo que sabemos de tu naturaleza. Mavuika, por su parte, gasta su propia Gnosis como última moneda para salvar a su gente del ataque final.',
+        canon: 'confirmado',
+      },
+    ],
+  },
+  {
+    id: 'nodkrai',
+    title: 'Nod-Krai',
+    subtitle: 'La tierra de la luna',
+    tagline: 'El arco actual: todavía se está escribiendo.',
+    region: 'nodkrai',
+    icon: 'Moon',
+    spoiler: 'natlan',
+    acts: [
+      {
+        title: 'En curso',
+        body: 'Nod-Krai es el arco que se está contando ahora mismo. Lo que se sabe con certeza es poco y cambia con cada actualización, así que este atlas no se aventura a resumirlo como si fuera historia cerrada. Lo que sí es seguro: quedan pendientes Snezhnaya, la Zarina y muchas de las respuestas que el juego lleva prometiendo desde el prólogo.',
+        canon: 'abierto',
+      },
+    ],
+  },
+];
+
 export const NODE_MAP = Object.fromEntries(NODES.map((n) => [n.id, n]));
 
 export function nodeColor(node) {
