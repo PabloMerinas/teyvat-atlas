@@ -5,12 +5,42 @@
 // ─────────────────────────────────────────────────────────────
 
 export const ERAS = {
-  primordial: { label: 'Cosmología antigua', short: 'Cosmología', color: '#e3c27d' },
-  perdidas: { label: 'Civilizaciones perdidas', short: 'C. perdidas', color: '#b9c8d8' },
-  arcontes: { label: 'Guerra de Arcontes', short: 'Arcontes', color: '#d99a5b' },
-  cataclismo: { label: "Khaenri'ah y Cataclismo", short: 'Cataclismo', color: '#e05a68' },
-  presente: { label: 'El viaje del Viajero', short: 'Presente', color: '#7fd0c9' },
-  futuro: { label: 'Lo que viene', short: 'Futuro', color: '#8b93b8' },
+  primordial: {
+    label: 'Cosmología antigua',
+    short: 'Cosmología',
+    color: '#e3c27d',
+    year: 'Tiempos inmemoriales',
+  },
+  perdidas: {
+    label: 'Civilizaciones perdidas',
+    short: 'C. perdidas',
+    color: '#b9c8d8',
+    year: 'Miles de años atrás',
+  },
+  arcontes: {
+    label: 'Guerra de Arcontes',
+    short: 'Arcontes',
+    color: '#d99a5b',
+    year: 'Hace ~2.000 años',
+  },
+  cataclismo: {
+    label: "Khaenri'ah y Cataclismo",
+    short: 'Cataclismo',
+    color: '#e05a68',
+    year: 'Hace 500 años',
+  },
+  presente: {
+    label: 'El viaje del Viajero',
+    short: 'Presente',
+    color: '#7fd0c9',
+    year: 'Presente',
+  },
+  futuro: {
+    label: 'Lo que viene',
+    short: 'Futuro',
+    color: '#8b93b8',
+    year: 'Por venir',
+  },
 };
 
 export const REGIONS = {
