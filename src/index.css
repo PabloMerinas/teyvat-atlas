@@ -1,0 +1,51 @@
+:root {
+  --font-display: 'Cinzel', 'Times New Roman', serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --bg: #07090f;
+  --ink: #e7e2d4;
+  --ink-dim: #9b97a6;
+  --ink-faint: #6b6878;
+  --gold: #d8b36a;
+  --line: rgba(216, 179, 106, 0.14);
+  --glass: rgba(11, 14, 21, 0.78);
+  --glass-border: rgba(216, 179, 106, 0.16);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+select {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(216, 179, 106, 0.28);
+}
