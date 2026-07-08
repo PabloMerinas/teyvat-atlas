@@ -1,9 +1,10 @@
 # Atlas de Teyvat
 
 Atlas interactivo de la historia y los misterios de Genshin Impact, inspirado en la web
-interactiva de la serie *Dark*. Un mapa narrativo/cosmológico con más de 80 nodos y ~150
+interactiva de la serie *Dark*. Un mapa narrativo/cosmológico con 103 nodos y 170
 conexiones: Celestia, Khaenri'ah, el Abismo, los Arcontes y sus dioses caídos, las Gnosis,
-las civilizaciones perdidas, los Fatui y sus Harbingers, y el viaje del Viajero.
+las civilizaciones perdidas, los Fatui y sus Harbingers, el viaje del Viajero acto a acto
+(22 actos, de Mondstadt a Natlan), y Nod-Krai como frontera abierta.
 
 ## Ejecutar
 
@@ -17,11 +18,13 @@ npm run build    # build de producción en dist/
 
 - **Diagrama interactivo** (React Flow) con zoom/pan, zonas por era, nodos con forma según
   tipo (evento, personaje, facción, objeto, misterio) y color según región/era.
-- **5 rutas de lectura guiadas** con pasos numerados: Entenderlo rápido, El misterio central,
-  Arcontes y Gnosis, Dioses caídos y olvidados, y Cronología completa (navegables con ← →).
+- **6 rutas de lectura guiadas** con pasos numerados: Entenderlo rápido, El misterio central,
+  Arcontes y Gnosis, Dioses caídos y olvidados, Cronología completa, y La Cuesta del Arconte
+  acto a acto (navegables con ← →).
 - **Guía por actos**: la Cuesta del Arconte completa, capítulo a capítulo — Prólogo,
   Liyue, Inazuma, Sumeru, Fontaine, Natlan y el Nod-Krai actual (marcado como arco abierto,
-  sin inventar lo que el juego todavía no ha contado).
+  sin inventar lo que el juego todavía no ha contado). Los 22 actos también existen como
+  nodos reales dentro del grafo, encadenados bajo el nodo de cada capítulo.
 - **Panel de detalle** por nodo: resumen, explicación, "por qué importa", conexiones
   clicables, tags, distinción entre canon confirmado/interpretación/tema abierto, y el
   periodo aproximado en el que ocurre (Teyvat rara vez da fechas absolutas, así que se
