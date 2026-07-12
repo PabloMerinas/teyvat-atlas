@@ -138,7 +138,7 @@ export default function Toolbar({
               onChange={(e) => setSpoilerLimit(e.target.value)}
               aria-label="Nivel de spoilers"
             >
-              {SPOILER_ORDER.filter((k) => k !== 'ninguno' || true).map((k) => (
+              {SPOILER_ORDER.map((k) => (
                 <option key={k} value={k}>
                   {SPOILER_LABELS[k]}
                 </option>
